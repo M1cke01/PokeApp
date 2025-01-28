@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Inicio from "./components/Inicio";
-import PokemonDetails from "./components/PokemonDetails";
+import Inicio from "./components/Inicio/index.tsx";
 
 const App = () => {
   return (
@@ -9,7 +8,6 @@ const App = () => {
         <h1>Pokedex</h1>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/pokemon/:name" element={<PokemonDetails />} />
         </Routes>
       </div>
   );
